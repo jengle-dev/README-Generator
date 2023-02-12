@@ -1,1 +1,1 @@
-# README-Generator
+# Quality README-Generator
