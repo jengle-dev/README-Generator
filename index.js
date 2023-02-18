@@ -1,3 +1,4 @@
+// TODO: Include packages needed for this application
 //node requirements/dependencies
 const inquirer = require('inquirer');//getting an 'ERR_REQUIRE_ESM'
 // import {inquirer} from 'inquirer';
@@ -8,6 +9,11 @@ const generateReadmeMd = ({ }) =>
     //README.md template
     ``;
 
+
+// TODO: Create an array of questions for user input
+const questions = [];
+
+// TODO: Create an array of questions for user input
 inquirer
     .prompt([
         {
@@ -43,9 +49,11 @@ inquirer
         },
 
     ])
+
     .then((answers) => {
         const readmeContent = generateReadmeMd(answers);
 
+        // TODO: Create a function to write README file
         fs.writeFile('README.md', readmeContent, (err) =>
             err ? console.log(err) : console.log('Successfully created README.md.')
         );
@@ -57,6 +65,12 @@ inquirer
     //     } else {
     //       // Something else went wrong
     //     }
+
+    // TODO: Create a function to initialize app
+function init() {}
+
+// Function call to initialize app
+init();
 
 //Sections of Readme provided from https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
 // Project title
