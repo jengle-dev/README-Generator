@@ -42,3 +42,5 @@ In progress, incomplete.
 
 I am currently stuck with an error in the command line. I continue to go around in a circle on .js vs .cjs. I have uninstalled the default inquirer and tried inquirer@^8.0.0 but still getting an error. for ES module scope.
 
+![image](https://user-images.githubusercontent.com/117794203/219879663-bfd5afac-145c-4000-af7c-088679d69fc2.png)
+
