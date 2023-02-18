@@ -1,24 +1,44 @@
 # Quality README-Generator
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for information about my application repository
-    THEN a high-quality, professional README.md is generated with the title of my project and sections entitled 
-        Description, 
-        Table of Contents, 
-        Installation, 
-        Usage, 
-        License, 
-        Contributing, 
-        Tests, and 
-        Questions
-WHEN I enter my project title
-    THEN this is displayed as the title of the README
-WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-    THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-WHEN I choose a license for my application from a list of options
-    THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-WHEN I enter my GitHub username
-    THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-WHEN I enter my email address
-    THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-WHEN I click on the links in the Table of Contents
-    THEN I am taken to the corresponding section of the README
+
+## Description
+
+This project is to help any developer generate a quality README.md file quickly and efficiently using a CLI (Command Line Prompt) by answering a series of questions and receiving a file output.
+
+## Installation
+Node 
+npm inquirer
+npm fs
+
+## Usage
+
+Within the command line or terminal, enter [node index.js] to run the script. The script will prompt through questions that the user will respond. Those responses will be output in a README.md file.
+
+## Credits
+
+I have no official collaborators.
+
+Reviewed many sites & examples including:
+
+https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
+
+https://www.npmjs.com/package/inquirer
+
+https://www.educative.io/answers/how-to-use-the-inquirer-node-package
+
+https://gist.github.com/Igormandello/57d57ee9a9f32a5414009cbe191db432
+
+https://dev.to/antongolub/errrequireesm-4j0h
+
+https://www.freecodecamp.org/news/how-to-format-code-in-markdown/#:~:text=There%20are%20two%20ways%20to,will%20apply%20syntax%20highlighting%20to.
+
+## License
+
+No license currently required
+
+
+## Project Status
+
+In progress, incomplete. 
+
+I am currently stuck with an error in the command line. I continue to go around in a circle on .js vs .cjs. I have uninstalled the default inquirer and tried inquirer@^8.0.0 but still getting an error. for ES module scope.
+
