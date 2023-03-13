@@ -15,14 +15,14 @@ const inquirer = require('inquirer');//getting an 'ERR_REQUIRE_ESM'
 //see function generateMarkdown
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (license = ''){
-    return('')
+  if (license = '') {
+    return ('')
   } else {
-    return('license')
+    return ('license')
   }
- };
+};
 
- renderLicenseSection();
+renderLicenseSection();
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
