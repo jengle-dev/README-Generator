@@ -19,6 +19,7 @@ To run the application in the Terminal:
 * https://github.com/jengle-dev/Interview_Questions_Generator/blob/main/Develop/index.js
 * https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/
 * https://www.npmjs.com/package/inquirer?activeTab=explore
+* https://github.com/jwilferd10/professional-readme-generator/blob/main/index.js
 * Reviewed solved coursework files.
 
 ## Support
