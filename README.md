@@ -14,6 +14,12 @@ A user will be able to go through command prompts to answer questions so a READM
 To run the application in the Terminal:
 * node index.js
 
+### Visual
+Here is a screenshot of my application after running the new README.md getting generated. 
+
+![image](https://github.com/jengle-dev/README-Generator/assets/117794203/4119896e-4043-41db-952e-c1743191d56d)
+
+
 ## References
 * https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
 * https://github.com/jengle-dev/Interview_Questions_Generator/blob/main/Develop/index.js
