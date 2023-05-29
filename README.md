@@ -5,7 +5,7 @@ A command-line application from scratch to manage a company's employee database,
 Install the packages in the list below, in the order provided for the application to have access to its required dependencies
 * npm init -y
 * npm i
-* npm i inquirer@8.2.4
+* npm i inquirer@7.3.3
 * npm i fs
 
 ## Usage
