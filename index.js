@@ -1,11 +1,12 @@
 // TODO: Include packages needed for this application
 //node requirements/dependencies
-const inquirer = require('inquirer');//getting an 'ERR_REQUIRE_ESM'
-// import {inquirer} from 'inquirer';
-const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown');
+const inquirer = require('inquirer');//getting an 'ERR_REQUIRE_ESM' reverted from 8.2.4 to 7.3.3 to allow for commonJS
 
-// TODO: Create an array of questions for user input
+const fs = require('fs');
+const writeToFile = require('./utils/generateMarkdown.js');
+
+
+// An array of questions for user input
 const questions = [
     {
       type: 'input',
@@ -50,12 +51,10 @@ const questions = [
     },
   ];
 
-  generateMarkdown();
-    
-// TODO: Create a function to initialize app
+// Function to initialize app
 function init() {
     inquirer.prompt(questions).then((data) => {
-        writeToFile("README.md", data);
+        writeToFile('README.md', data);
     });
 }
 // Function call to initialize app

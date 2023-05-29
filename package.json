@@ -19,6 +19,6 @@
   "homepage": "https://github.com/jengle-dev/README-Generator#readme",
   "dependencies": {
     "fs": "^0.0.1-security",
-    "inquirer": "^8.2.4"
+    "inquirer": "^7.3.3" 
   }
 }

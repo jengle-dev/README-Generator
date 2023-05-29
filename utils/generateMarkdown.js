@@ -1,30 +1,18 @@
 const fs = require('fs');
-const inquirer = require('inquirer');//getting an 'ERR_REQUIRE_ESM'
+const inquirer = require('inquirer'); //getting an 'ERR_REQUIRE_ESM' reverted from 8.2.4 to 7.3.3 to allow for commonJS
 
-// TODO: Create a function that returns a license badge based on which license is passed in
-// // If there is no license, return an empty string
-// function renderLicenseBadge(license) {
-
-// }
-
-// // TODO: Create a function that returns the license link
-// // If there is no license, return an empty string
-// function renderLicenseLink(license) { };
-
-// TODO: Create a function that returns the license section of README
-//see function generateMarkdown
+// Function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (license = '') {
-    return ('')
+  if (license === '') {
+    return ('');
   } else {
-    return ('license')
+    return license;
   }
 };
 
-renderLicenseSection();
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown text itself for README
 function generateMarkdown(data) {
   //README.md template
   const readMeContent = `
@@ -51,15 +39,19 @@ function generateMarkdown(data) {
     ## Project Status
     The current project status is ${data.status}.
     `;
+    return readMeContent.trim(); //converts to a string to help with the formatting and output
 };
 
-// TODO: Create a function to write README file
+// Function to write README file
+function writeToFile(fileName, readMeContent) {
+  readMeContent = generateMarkdown('data');
 fs.writeFile(fileName, readMeContent, (err) => {
   if (err) {
     console.error(err);
   } else {
-    console.log(`README.md file generated successfully`);
+    console.log(`Your new README.md file generated successfully`);
   }
 });
+};
 
-module.exports = generateMarkdown;
+module.exports = writeToFile;
