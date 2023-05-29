@@ -43,8 +43,8 @@ function generateMarkdown(data) {
 };
 
 // Function to write README file
-function writeToFile(fileName, readMeContent) {
-  readMeContent = generateMarkdown('data');
+function writeToFile(fileName, data) {
+  readMeContent = generateMarkdown(data);
 fs.writeFile(fileName, readMeContent, (err) => {
   if (err) {
     console.error(err);
